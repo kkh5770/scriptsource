@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>클릭하면 사라집니다.</h2>
+    <p class="para1">첫번째 문단입니다.</p>
+    <p id="para2">두번째 문단입니다.</p>
+    <button>클릭하세요</button>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- jquery 사용 1번 cdn 올리고 2번 내가 만든 스크립트 
+$ jquery의 약자    this는 현재 클릭된 요소 모든 요소 (*) -->
+    <script>
+      $("button").click(function() {
+        $("h2").hide();
+      });
+    </script>
+  </body>
+</html>

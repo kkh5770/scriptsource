@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <style>
+      table {
+        border-collapse: collapse;
+      }
+      td {
+        border: 1px solid;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td>내용1</td>
+        <td>내용2</td>
+      </tr>
+      <tr>
+        <td>내용1</td>
+        <td>내용2</td>
+      </tr>
+      <tr>
+        <td>내용1</td>
+        <td>내용2</td>
+      </tr>
+      <tr>
+        <td>내용1</td>
+        <td>내용2</td>
+      </tr>
+    </table>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- jquery 사용 1번 cdn 올리고 2번 내가 만든 스크립트 
+$ jquery의 약자    -->
+    <script>
+      $("tr:even").css("background-color", "#bbf");
+    </script>
+  </body>
+</html>
